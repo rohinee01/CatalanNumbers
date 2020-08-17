@@ -65,6 +65,7 @@ For n$\geq$3, let $C_{n-2}^1$ denotes the number of ways to \emph{triangulate} a
     Then the sequence $\{C_n^1\}_{n=0}^\infty$ is given by,  
     $$C_{n-2}^1 = \sum_{k = 0}^{n-1}\ C_{k-2}^1 C_{n-k-1}^1$$. 
 \end{frame}
+<return>
 
 %slide 6
 \begin{frame}{Hands across a table}
@@ -94,6 +95,120 @@ For n$\geq$3, let $C_{n-2}^1$ denotes the number of ways to \emph{triangulate} a
 
 %Sangraam Slides
 
+%slide 8
+\begin{frame}{Parenthesis}
+    For n$\geq$1, we have n pairs of parentheses and we would like to form valid groupings of them. “valid” means that each open parenthesis has a matching closed parenthesis.\\
+    Define a sequence as $C_0^6=$1, and $C_n^6$ as the number of such valid groupings, for n$\geq$1. Find the sequence. 
+    \begin{figure}
+        \centering
+        \includegraphics[width=9.5cm]{Paranthesis.JPG}
+        \caption{Illustration for small values of n}
+        \label{fig:my_label}
+    \end{figure}
+\end{frame}
 
+%slide 9
+\begin{frame}{Approach}
+    
+\end{frame}
+
+%slide 10
+\begin{frame}{Mountain ranges}
+    How many “mountain ranges” can you form with n upstrokes and n downstrokes that all stay above the original line? Define $C_0^7=1$ and find the sequence as the solution to this problem as $C_n^7$, for n$\geq$1. 
+    \begin{figure}
+        \centering
+        \includegraphics[width=7.5cm]{MountRange.JPG}
+        \caption{Illustration for small values of n}
+        \label{fig:my_label}
+    \end{figure}
+\end{frame}
+
+%slide 11
+\begin{frame}{Approach}
+    Analogy to previously solved problem?\\
+    left parenthesis \longrightarrow upstroke \\
+    right parenthesis \longrightarrow downstroke \\
+    Both arrangements have the same condition- while going from left to right, number of left parenthesis (or upstrokes) is not less than the number of right parenthesis (or downstrokes).\\\\
+    So both the problems have exactly same solution set. 
+\end{frame}
+
+%slide 12
+\begin{frame}{Diagonal avoiding paths}
+    In a grid of n×n squares, how many paths are there of length 2n that lead from the upper left corner to the lower right corner that stay on or above the main diagonal?
+    \begin{figure}
+        \centering
+        \includegraphics[width=7cm]{DiagProb.JPG}
+        \caption{An illustration }
+        \label{fig:my_label}
+    \end{figure}
+\end{frame}
+
+%slide 13
+\begin{frame}{Approach}
+    Again, an analogy to previously solved problem?\\
+    \begin{figure}
+        \centering
+        \includegraphics[width=9cm]{Analogy1.JPG}
+        \caption{Illustrating the analogy}
+        \label{fig:my_label}
+    \end{figure}\\
+    For a given n, bijection between number of mountain ranges and diagonal avoiding paths??\\\\
+    So both the problems have exactly same solution set. 
+\end{frame}
+
+%slide 14
+\begin{frame}{Election problem}
+    Two candidates A and B are running in an election. There are 2n voters who vote sequentially for one of the two candidates. At the end, each candidate receives n votes. What is the probability that A never trails B in the voting?\\\\
+    Again, an identical problem. (Why?)\\\\
+    Define a \emph{ballot sequence} of length $2n$, as a sequence with $n$ 1's and $n -1's$ such that every partial sum is non-negative. \\\\
+    All we have to do is find the number of ballot sequences. 
+\end{frame}
+
+%slide15
+\begin{frame}{A chess puzzle}
+    A \emph{helpmate} is a type of chess problem where white and black \emph{cooperate} in order to achieve the goal of checkmating black.\\
+    A \emph{serieshelpmate in 34} is a chess problem in which black makes 34 consecutive moves, after which white checkmates black in one move. \\\\
+    \emph{Queue Problems}- 15 problems of similar nature.
+\end{frame}
+
+%slide16
+\begin{frame}{A chess puzzle}
+    \begin{figure}
+        \centering
+        \includegraphics[width=7cm]{Screenshot_20200817-181011.jpg}
+        \caption{Consider the following chess position}
+        \label{fig:my_label}
+    \end{figure}
+    \end{frame}
+    
+%slide17
+\begin{frame}{A chess puzzle}
+     \uncover<1->{For a serieshelpmate in 34, how many different solutions are there?}\\
+    \uncover<2->{The answer is $C_17$. (Why?)}\\
+    \uncover<3->{There was a chess puzzle constructed by Stanley with $C_9$ solutions.}
+\end{frame}
+   
+%slide18
+\begin{frame}{Generalizations}
+    \begin{itemize}
+        \uncover<1->{\item \emph{Super Catalan Numbers} are defined as $\frac{(2m)!\cdot(2n)!}{(m+n)!n!m!}$.}
+        \uncover<2->{\item For $m=1$, this is just two times the ordinary Catalan numbers. For $m=n$, the numbers have an easy combinatorial description. However, other combinatorial descriptions are only known for $m=2$ and $m=3$. It is an open problem to find a general combinatorial interpretation.}
+        \uncover<3->{\item \emph{Fuss Catalan Numbers, Narayana numbers, Motzkin numbers, Schr¨oder numbers} (Ugghh what's thatt://)}
+    \end{itemize}
+\end{frame}
+
+%slide19
+\begin{frame}{Catalan Numbers}
+    \begin{figure}
+        \centering
+        \includegraphics{graph.JPG}
+        \caption{Representation of Catalan Numbers}
+        \label{fig:my_label}
+    \end{figure}
+\end{frame}
+
+%slide20
+\begin{frame}{Catalan Numbers}
+    %Collage- visual forms of CNs. Thank you.
+\end{frame}
 \end{document}
-
